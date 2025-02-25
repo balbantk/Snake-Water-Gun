@@ -1,7 +1,6 @@
 import random
 
 def get_winner(user, computer):
-    """Determine the winner based on the game rules."""
     if user == computer:
         return "It's a Tie!"
     
@@ -31,6 +30,5 @@ while True:
     computer_choice = random.choice(options)
     print(f"Computer chose: {computer_choice}")
 
-    # Determine Winner
     result = get_winner(user_choice, computer_choice)
     print(result)
